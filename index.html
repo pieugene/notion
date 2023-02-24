@@ -391,10 +391,7 @@
                 <div id="player-content">
                     <div id="album-art">
                         <img src="https://i.pinimg.com/736x/19/ae/7a/19ae7a2c92d9c87dc8d27c63a66196cc.jpg" class="active" id="_1">
-                        <img src="https://i.pinimg.com/736x/19/ae/7a/19ae7a2c92d9c87dc8d27c63a66196cc.jpg" id="_2">
-                        <img src="https://i.pinimg.com/736x/19/ae/7a/19ae7a2c92d9c87dc8d27c63a66196cc.jpg" id="_3">
-                        <img src="https://i.pinimg.com/736x/19/ae/7a/19ae7a2c92d9c87dc8d27c63a66196cc.jpg" id="_4">
-                        <img src="https://i.pinimg.com/736x/19/ae/7a/19ae7a2c92d9c87dc8d27c63a66196cc.jpg" id="_5">
+                      
                         <div id="buffer-box">Buffering ...</div>
                     </div>
                     <div id="player-controls">
@@ -426,11 +423,8 @@
         $(function()
     {
         var playerTrack = $("#player-track"), bgArtwork = $('#bg-artwork'), bgArtworkUrl, albumName = $('#album-name'), trackName = $('#track-name'), albumArt = $('#album-art'), sArea = $('#s-area'), seekBar = $('#seek-bar'), trackTime = $('#track-time'), insTime = $('#ins-time'), sHover = $('#s-hover'), playPauseButton = $("#play-pause-button"),  i = playPauseButton.find('i'), tProgress = $('#current-time'), tTime = $('#track-length'), seekT, seekLoc, seekBarPos, cM, ctMinutes, ctSeconds, curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0, buffInterval = null, tFlag = false, albums = ['moon and away'], trackNames = ['꼭 함께 해요 우주비행'], albumArtworks = ['_1','_2','_3','_4','_5'], 
-            trackUrl = ['https://blogattach.naver.com/61f47dcddd8185597594f5c2f810631ebcec12f5d3/20230224_86_blogfile/toefl1120_1677166345485_1fgTee_mp3/Moon%20and%20Away.mp3',
-                        'https://blogattach.naver.com/61f47dcddd8185597594f5c2f810631ebcec12f5d3/20230224_86_blogfile/toefl1120_1677166345485_1fgTee_mp3/Moon%20and%20Away.mp3',
-                        'https://blogattach.naver.com/61f47dcddd8185597594f5c2f810631ebcec12f5d3/20230224_86_blogfile/toefl1120_1677166345485_1fgTee_mp3/Moon%20and%20Away.mp3',
-                        'https://blogattach.naver.com/61f47dcddd8185597594f5c2f810631ebcec12f5d3/20230224_86_blogfile/toefl1120_1677166345485_1fgTee_mp3/Moon%20and%20Away.mp3',
-                        'https://blogattach.naver.com/61f47dcddd8185597594f5c2f810631ebcec12f5d3/20230224_86_blogfile/toefl1120_1677166345485_1fgTee_mp3/Moon%20and%20Away.mp3'], 
+            trackUrl = ['https://blogattach.naver.com/61f47dcddd8185597594f5c1fa1d6012bdea15fcdb/20230224_86_blogfile/toefl1120_1677166345485_1fgTee_mp3/Moon%20and%20Away.mp3',
+                        ], 
             playPreviousTrackButton = $('#play-previous'), playNextTrackButton = $('#play-next'), currIndex = -1;
     
         function playPause()
